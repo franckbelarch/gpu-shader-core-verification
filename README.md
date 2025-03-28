@@ -29,6 +29,7 @@ gpu-shader-core-v/
 │   └── coverage_analysis/       # Coverage gap analysis
 ├── examples/                    # Usage examples
 └── data/                        # Test data and coverage information
+└── License                      # License information
 ```
 
 ## Features
@@ -112,3 +113,10 @@ This project has demonstrated significant improvements in verification efficienc
 - 56% faster regression execution time
 
 See the [results analysis](docs/results/results_analysis.md) for detailed metrics and insights.
+
+## License
+
+The contents of this repository are available for **viewing purposes**. If you'd like to download, reuse, modify, or redistribute any part of the code or diagrams, please reach out for permission.
+
+For inquiries or to discuss potential contributions, please contact me at francknbkg@gmail.com.
+Thank you

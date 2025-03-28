@@ -16,7 +16,7 @@ The shader core is the main processing unit that executes shader programs. It co
 - **Tensor Unit**: Accelerates tensor operations
 - **Memory Subsystem**: Handles memory operations
 
-![Shader Core Architecture](figures/shader_core_architecture.png)
+![Shader Core Architecture](figures/shader_core_architecture.svg)
 
 #### Instruction Pipeline
 
@@ -121,7 +121,7 @@ The verification architecture follows a UVM-like approach with SystemC:
 - **Scoreboard**: Compares expected vs. actual results
 - **Coverage Collector**: Tracks verification coverage
 
-![Verification Architecture](figures/verification_architecture.png)
+![Verification Architecture](figures/verification_architecture.svg)
 
 ### Transaction Flow
 
