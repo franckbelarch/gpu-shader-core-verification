@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 800">
+  <!-- Main Shader Core Container -->
+  <rect x="50" y="50" width="600" height="410" fill="#f8cecc" stroke="#b85450" stroke-width="2"/>
+  <text x="350" y="80" font-family="Arial" font-size="18" text-anchor="middle" font-weight="bold">GPU Shader Core</text>
+  
+  <!-- Instruction Pipeline -->
+  <rect x="100" y="100" width="500" height="100" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+  <text x="350" y="125" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Instruction Pipeline</text>
+  
+  <!-- Pipeline Components -->
+  <rect x="120" y="140" width="100" height="40" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+  <text x="170" y="165" font-family="Arial" font-size="12" text-anchor="middle">Instruction Fetch</text>
+  
+  <rect x="240" y="140" width="100" height="40" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+  <text x="290" y="165" font-family="Arial" font-size="12" text-anchor="middle">Decode</text>
+  
+  <rect x="360" y="140" width="100" height="40" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+  <text x="410" y="165" font-family="Arial" font-size="12" text-anchor="middle">Execute</text>
+  
+  <rect x="480" y="140" width="100" height="40" fill="#dae8fc" stroke="#6c8ebf" stroke-width="1"/>
+  <text x="530" y="165" font-family="Arial" font-size="12" text-anchor="middle">Writeback</text>
+  
+  <!-- Pipeline Arrows -->
+  <line x1="220" y1="160" x2="240" y2="160" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="340" y1="160" x2="360" y2="160" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="460" y1="160" x2="480" y2="160" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Execution Units -->
+  <rect x="100" y="230" width="240" height="200" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+  <text x="220" y="255" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Execution Units</text>
+  
+  <rect x="120" y="270" width="200" height="40" fill="#d5e8d4" stroke="#82b366" stroke-width="1"/>
+  <text x="220" y="295" font-family="Arial" font-size="12" text-anchor="middle">ALU</text>
+  
+  <rect x="120" y="320" width="200" height="40" fill="#d5e8d4" stroke="#82b366" stroke-width="1"/>
+  <text x="220" y="345" font-family="Arial" font-size="12" text-anchor="middle">Special Function Unit</text>
+  
+  <rect x="120" y="370" width="200" height="40" fill="#d5e8d4" stroke="#82b366" stroke-width="1"/>
+  <text x="220" y="395" font-family="Arial" font-size="12" text-anchor="middle">Control Flow Unit</text>
+  
+  <!-- Tensor Unit -->
+  <rect x="360" y="230" width="240" height="200" fill="#fff2cc" stroke="#d6b656" stroke-width="2"/>
+  <text x="480" y="255" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Tensor Unit</text>
+  
+  <rect x="380" y="270" width="200" height="40" fill="#fff2cc" stroke="#d6b656" stroke-width="1"/>
+  <text x="480" y="295" font-family="Arial" font-size="12" text-anchor="middle">Matrix Multiply Unit</text>
+  
+  <rect x="380" y="320" width="200" height="40" fill="#fff2cc" stroke="#d6b656" stroke-width="1"/>
+  <text x="480" y="345" font-family="Arial" font-size="12" text-anchor="middle">Convolution Unit</text>
+  
+  <rect x="380" y="370" width="200" height="40" fill="#fff2cc" stroke="#d6b656" stroke-width="1"/>
+  <text x="480" y="395" font-family="Arial" font-size="12" text-anchor="middle">Tensor Buffer</text>
+  
+  <!-- Memory Subsystem -->
+  <rect x="50" y="490" width="600" height="280" fill="#e1d5e7" stroke="#9673a6" stroke-width="2"/>
+  <text x="350" y="520" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Memory Subsystem</text>
+  
+  <rect x="300" y="540" width="120" height="40" fill="#e1d5e7" stroke="#9673a6" stroke-width="1"/>
+  <text x="360" y="565" font-family="Arial" font-size="12" text-anchor="middle">Register File</text>
+  
+  <rect x="300" y="600" width="120" height="40" fill="#e1d5e7" stroke="#9673a6" stroke-width="1"/>
+  <text x="360" y="625" font-family="Arial" font-size="12" text-anchor="middle">Shared Memory</text>
+  
+  <rect x="220" y="660" width="120" height="40" fill="#e1d5e7" stroke="#9673a6" stroke-width="1"/>
+  <text x="280" y="685" font-family="Arial" font-size="12" text-anchor="middle">L1 Cache</text>
+  
+  <rect x="380" y="660" width="120" height="40" fill="#e1d5e7" stroke="#9673a6" stroke-width="1"/>
+  <text x="440" y="685" font-family="Arial" font-size="12" text-anchor="middle">L2 Cache</text>
+  
+  <rect x="250" y="720" width="220" height="40" fill="#e1d5e7" stroke="#9673a6" stroke-width="1"/>
+  <text x="360" y="745" font-family="Arial" font-size="12" text-anchor="middle">Global Memory (HBM3e)</text>
+  
+  <!-- Precision Support -->
+  <rect x="670" y="150" width="160" height="140" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+  <text x="750" y="170" font-family="Arial" font-size="14" text-anchor="middle" font-weight="bold">Precision Support</text>
+  
+  <text x="680" y="200" font-family="Arial" font-size="12" text-anchor="start">- FP32 (Full precision)</text>
+  <text x="680" y="225" font-family="Arial" font-size="12" text-anchor="start">- FP16 (Half precision)</text>
+  <text x="680" y="250" font-family="Arial" font-size="12" text-anchor="start">- FP8 (Quarter precision)</text>
+  <text x="680" y="275" font-family="Arial" font-size="12" text-anchor="start">- FP4 (Sub-quarter)</text>
+  
+  <!-- Connecting arrows -->
+  <line x1="220" y1="200" x2="220" y2="230" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="480" y1="200" x2="480" y2="230" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="340" y1="330" x2="360" y2="330" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="350" y1="460" x2="350" y2="490" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="670" y1="220" x2="600" y2="320" stroke="#000" stroke-width="1" stroke-dasharray="5,5"/>
+  
+  <!-- Memory hierarchy arrows -->
+  <line x1="360" y1="580" x2="360" y2="600" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="340" y1="640" x2="280" y2="660" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="380" y1="640" x2="440" y2="660" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="280" y1="700" x2="320" y2="720" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  <line x1="440" y1="700" x2="400" y2="720" stroke="#000" stroke-width="1.5" marker-end="url(#arrowhead)"/>
+  
+  <!-- Text annotations -->
+  <text x="350" y="475" font-family="Arial" font-size="12" text-anchor="middle">Memory Access</text>
+  
+  <!-- Define the arrowhead marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    </marker>
+  </defs>
+</svg>

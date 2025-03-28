@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 520">
+  <!-- Background and chart area -->
+  <rect x="120" y="80" width="600" height="360" fill="#f5f5f5" stroke="#666666" stroke-width="1"/>
+  
+  <!-- Chart title -->
+  <text x="420" y="110" font-family="Arial" font-size="18" font-weight="bold" text-anchor="middle">Coverage Trends Over Time</text>
+  
+  <!-- X and Y axis -->
+  <line x1="160" y1="400" x2="680" y2="400" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="160" y1="400" x2="160" y2="120" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Axis labels -->
+  <text x="420" y="435" font-family="Arial" font-size="12" text-anchor="middle">Project Timeline (Weeks)</text>
+  <text x="120" y="260" font-family="Arial" font-size="12" text-anchor="middle" transform="rotate(-90,120,260)">Coverage (%)</text>
+  
+  <!-- X-axis tick marks and labels -->
+  <text x="230" y="420" font-family="Arial" font-size="10" text-anchor="middle">Week 2</text>
+  <text x="300" y="420" font-family="Arial" font-size="10" text-anchor="middle">Week 4</text>
+  <text x="370" y="420" font-family="Arial" font-size="10" text-anchor="middle">Week 6</text>
+  <text x="440" y="420" font-family="Arial" font-size="10" text-anchor="middle">Week 8</text>
+  <text x="510" y="420" font-family="Arial" font-size="10" text-anchor="middle">Week 10</text>
+  <text x="580" y="420" font-family="Arial" font-size="10" text-anchor="middle">Week 12</text>
+  <text x="650" y="420" font-family="Arial" font-size="10" text-anchor="middle">Week 14</text>
+  
+  <!-- Y-axis tick marks and labels -->
+  <text x="145" y="400" font-family="Arial" font-size="10" text-anchor="end">0%</text>
+  <text x="145" y="344" font-family="Arial" font-size="10" text-anchor="end">20%</text>
+  <text x="145" y="288" font-family="Arial" font-size="10" text-anchor="end">40%</text>
+  <text x="145" y="232" font-family="Arial" font-size="10" text-anchor="end">60%</text>
+  <text x="145" y="176" font-family="Arial" font-size="10" text-anchor="end">80%</text>
+  <text x="145" y="120" font-family="Arial" font-size="10" text-anchor="end">100%</text>
+  
+  <!-- Grid lines -->
+  <line x1="160" y1="344" x2="680" y2="344" stroke="#000" stroke-width="0.5" stroke-dasharray="3,3"/>
+  <line x1="160" y1="288" x2="680" y2="288" stroke="#000" stroke-width="0.5" stroke-dasharray="3,3"/>
+  <line x1="160" y1="232" x2="680" y2="232" stroke="#000" stroke-width="0.5" stroke-dasharray="3,3"/>
+  <line x1="160" y1="176" x2="680" y2="176" stroke="#000" stroke-width="0.5" stroke-dasharray="3,3"/>
+  <line x1="160" y1="120" x2="680" y2="120" stroke="#000" stroke-width="0.5" stroke-dasharray="3,3"/>
+  
+  <line x1="230" y1="400" x2="230" y2="120" stroke="#000" stroke-width="0.5" stroke-dasharray="3,3"/>
+  <line x1="300" y1="400" x2="300" y2="120" stroke="#000" stroke-width="0.5" stroke-dasharray="3,3"/>
+  <line x1="370" y1="400" x2="370" y2="120" stroke="#000" stroke-width="0.5" stroke-dasharray="3,3"/>
+  <line x1="440" y1="400" x2="440" y2="120" stroke="#000" stroke-width="0.5" stroke-dasharray="3,3"/>
+  <line x1="510" y1="400" x2="510" y2="120" stroke="#000" stroke-width="0.5" stroke-dasharray="3,3"/>
+  <line x1="580" y1="400" x2="580" y2="120" stroke="#000" stroke-width="0.5" stroke-dasharray="3,3"/>
+  <line x1="650" y1="400" x2="650" y2="120" stroke="#000" stroke-width="0.5" stroke-dasharray="3,3"/>
+  
+  <!-- Data Lines -->
+  <!-- Traditional Approach -->
+  <polyline points="160,380 230,350 300,300 370,232 440,176 510,155 580,135 650,125" 
+    fill="none" stroke="#6c8ebf" stroke-width="3"/>
+  
+  <!-- Target Coverage -->
+  <polyline points="160,390 230,365 300,330 370,280 440,230 510,190 580,150 650,140" 
+    fill="none" stroke="#d79b00" stroke-width="3"/>
+  
+  <!-- AI-Assisted Approach -->
+  <polyline points="160,370 230,320 300,250 370,200 440,160 510,140 580,130 650,120" 
+    fill="none" stroke="#82b366" stroke-width="3"/>
+  
+  <!-- Special annotations -->
+  <text x="300" y="260" font-family="Arial" font-size="12" text-anchor="middle" font-style="italic">AI-Assisted Optimization Enabled</text>
+  <line x1="300" y1="270" x2="300" y2="300" stroke="#000" stroke-width="1" stroke-dasharray="5,5"/>
+  
+  <text x="520" y="155" font-family="Arial" font-size="12" text-anchor="middle" transform="rotate(-15,520,155)" font-weight="bold">37% Faster</text>
+  <line x1="480" y1="160" x2="580" y2="130" stroke="#000" stroke-width="1" stroke-dasharray="5,5"/>
+  
+  <!-- Legend -->
+  <rect x="190" y="460" width="20" height="10" fill="#6c8ebf" stroke="#6c8ebf" stroke-width="1"/>
+  <text x="220" y="470" font-family="Arial" font-size="12" text-anchor="start">Traditional Approach</text>
+  
+  <rect x="190" y="480" width="20" height="10" fill="#82b366" stroke="#82b366" stroke-width="1"/>
+  <text x="220" y="490" font-family="Arial" font-size="12" text-anchor="start">AI-Assisted Approach</text>
+  
+  <rect x="370" y="460" width="20" height="10" fill="#d79b00" stroke="#d79b00" stroke-width="1"/>
+  <text x="400" y="470" font-family="Arial" font-size="12" text-anchor="start">Target Coverage</text>
+  
+  <!-- Define the arrowhead marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    </marker>
+  </defs>
+</svg>

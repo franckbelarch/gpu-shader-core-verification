@@ -1,0 +1,30 @@
+#!/bin/bash
+
+# Run all tests for GPU Shader Core Verification Project
+
+set -e
+
+echo "Running all GPU Shader Core verification tests..."
+
+# Create output directories
+mkdir -p @CMAKE_BINARY_DIR@/test-results/basic
+
+# Basic tests
+echo "Running basic ALU tests..."
+@CMAKE_BINARY_DIR@/verification/basic_alu_tests --gtest_output=xml:@CMAKE_BINARY_DIR@/test-results/basic/alu_tests.xml
+
+echo "Running basic tensor tests..."
+@CMAKE_BINARY_DIR@/verification/basic_tensor_tests --gtest_output=xml:@CMAKE_BINARY_DIR@/test-results/basic/tensor_tests.xml
+
+echo "Running basic memory tests..."
+@CMAKE_BINARY_DIR@/verification/basic_memory_tests --gtest_output=xml:@CMAKE_BINARY_DIR@/test-results/basic/memory_tests.xml
+
+echo "Running edge AI inference tests..."
+@CMAKE_BINARY_DIR@/verification/edge_ai_tests --gtest_output=xml:@CMAKE_BINARY_DIR@/test-results/basic/edge_ai_tests.xml
+
+echo "All tests completed successfully!"
+
+# Generate test summary
+python3 @CMAKE_SOURCE_DIR@/infrastructure/scripts/generate_test_summary.py @CMAKE_BINARY_DIR@/test-results @CMAKE_BINARY_DIR@/test_summary.html
+
+echo "Test summary available at: @CMAKE_BINARY_DIR@/test_summary.html"

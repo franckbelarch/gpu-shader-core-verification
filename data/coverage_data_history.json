@@ -1,0 +1,78 @@
+[
+  {
+    "test": {
+      "name": "basic_alu_test",
+      "type": "instruction_test",
+      "operations": [
+        {"opcode": "ALU_ADD", "iterations": 10},
+        {"opcode": "ALU_SUB", "iterations": 10},
+        {"opcode": "ALU_MUL", "iterations": 10},
+        {"opcode": "ALU_DIV", "iterations": 10}
+      ],
+      "complexity": 1
+    },
+    "coverage_increase": {
+      "instruction.ALU_ADD": 1,
+      "instruction.ALU_SUB": 1,
+      "instruction.ALU_MUL": 1,
+      "instruction.ALU_DIV": 1,
+      "instruction.NOP": 1
+    }
+  },
+  {
+    "test": {
+      "name": "logic_test",
+      "type": "instruction_test",
+      "operations": [
+        {"opcode": "ALU_AND", "iterations": 10},
+        {"opcode": "ALU_OR", "iterations": 10},
+        {"opcode": "ALU_XOR", "iterations": 10}
+      ],
+      "complexity": 1
+    },
+    "coverage_increase": {
+      "instruction.ALU_AND": 1,
+      "instruction.ALU_OR": 1,
+      "instruction.ALU_XOR": 1
+    }
+  },
+  {
+    "test": {
+      "name": "basic_tensor_test",
+      "type": "tensor_test",
+      "tensor_ops": [
+        {"operation": "MATRIX_MULTIPLY_FP16", "dimensions": [16, 16]},
+        {"operation": "VECTOR_DOT_PRODUCT", "dimensions": [64]}
+      ],
+      "complexity": 3
+    },
+    "coverage_increase": {
+      "instruction.TENSOR_MATMUL_FP16": 1,
+      "tensor.MATRIX_MULTIPLY_FP16": 1,
+      "tensor.VECTOR_DOT_PRODUCT": 1,
+      "tensor.TENSOR_COPY": 1,
+      "tensor.TENSOR_FILL": 1,
+      "tensor.NOP": 1
+    }
+  },
+  {
+    "test": {
+      "name": "basic_memory_test",
+      "type": "memory_test",
+      "memory_accesses": [
+        {"pattern": "sequential", "size": 1024},
+        {"pattern": "random", "size": 1024}
+      ],
+      "complexity": 2
+    },
+    "coverage_increase": {
+      "instruction.MEM_LOAD": 1,
+      "instruction.MEM_STORE": 1,
+      "memory.READ": 1,
+      "memory.WRITE": 1,
+      "memory.REGISTER_FILE": 1,
+      "memory.SHARED_MEMORY": 1,
+      "memory.L1_CACHE": 1
+    }
+  }
+]

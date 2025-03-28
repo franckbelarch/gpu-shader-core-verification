@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800">
+  <!-- Main Verification Environment Container -->
+  <rect x="50" y="50" width="900" height="700" fill="#dae8fc" stroke="#6c8ebf" stroke-width="2"/>
+  <text x="500" y="80" font-family="Arial" font-size="22" text-anchor="middle" font-weight="bold">Verification Environment</text>
+  
+  <!-- Top Row: Test Generation -->
+  <rect x="250" y="120" width="160" height="70" rx="15" ry="15" fill="#fff2cc" stroke="#d6b656" stroke-width="2"/>
+  <text x="330" y="165" font-family="Arial" font-size="16" text-anchor="middle">Test Generator</text>
+  
+  <!-- AI-Assisted Test Optimizer -->
+  <rect x="600" y="120" width="220" height="100" fill="#ffe6cc" stroke="#d79b00" stroke-width="2"/>
+  <text x="710" y="145" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">AI-Assisted Test Optimizer</text>
+  <text x="620" y="175" font-family="Arial" font-size="14" text-anchor="start">Coverage Gap Analysis</text>
+  <text x="620" y="205" font-family="Arial" font-size="14" text-anchor="start">Test Effectiveness Prediction</text>
+  
+  <!-- Middle Row: DUT and Reference Model -->
+  <rect x="150" y="280" width="260" height="250" fill="#f8cecc" stroke="#b85450" stroke-width="2"/>
+  <text x="280" y="310" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">DUT</text>
+  <text x="280" y="340" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">GPU Shader Core</text>
+  
+  <!-- DUT Components -->
+  <rect x="170" y="360" width="220" height="40" fill="#f8cecc" stroke="#b85450" stroke-width="1"/>
+  <text x="280" y="385" font-family="Arial" font-size="14" text-anchor="middle">Shader Core</text>
+  
+  <rect x="170" y="410" width="220" height="40" fill="#f8cecc" stroke="#b85450" stroke-width="1"/>
+  <text x="280" y="435" font-family="Arial" font-size="14" text-anchor="middle">Tensor Unit</text>
+  
+  <rect x="170" y="460" width="220" height="40" fill="#f8cecc" stroke="#b85450" stroke-width="1"/>
+  <text x="280" y="485" font-family="Arial" font-size="14" text-anchor="middle">Memory Subsystem</text>
+  
+  <rect x="170" y="510" width="220" height="30" fill="#f8cecc" stroke="#b85450" stroke-width="1"/>
+  <text x="280" y="530" font-family="Arial" font-size="14" text-anchor="middle">Instruction Pipeline</text>
+  
+  <!-- Reference Model -->
+  <rect x="600" y="280" width="260" height="250" fill="#d5e8d4" stroke="#82b366" stroke-width="2"/>
+  <text x="730" y="310" font-family="Arial" font-size="16" text-anchor="middle" font-weight="bold">Reference Model</text>
+  
+  <!-- Reference Model Components -->
+  <rect x="620" y="360" width="220" height="40" fill="#d5e8d4" stroke="#82b366" stroke-width="1"/>
+  <text x="730" y="385" font-family="Arial" font-size="14" text-anchor="middle">Shader Core Model</text>
+  
+  <rect x="620" y="410" width="220" height="40" fill="#d5e8d4" stroke="#82b366" stroke-width="1"/>
+  <text x="730" y="435" font-family="Arial" font-size="14" text-anchor="middle">Tensor Unit Model</text>
+  
+  <rect x="620" y="460" width="220" height="40" fill="#d5e8d4" stroke="#82b366" stroke-width="1"/>
+  <text x="730" y="485" font-family="Arial" font-size="14" text-anchor="middle">Memory Model</text>
+  
+  <rect x="620" y="510" width="220" height="30" fill="#d5e8d4" stroke="#82b366" stroke-width="1"/>
+  <text x="730" y="530" font-family="Arial" font-size="14" text-anchor="middle">Expected Results</text>
+  
+  <!-- Bottom Row: Analysis Components -->
+  <rect x="150" y="620" width="140" height="70" rx="15" ry="15" fill="#e1d5e7" stroke="#9673a6" stroke-width="2"/>
+  <text x="220" y="665" font-family="Arial" font-size="16" text-anchor="middle">Monitor</text>
+  
+  <rect x="375" y="620" width="140" height="70" rx="15" ry="15" fill="#e1d5e7" stroke="#9673a6" stroke-width="2"/>
+  <text x="445" y="665" font-family="Arial" font-size="16" text-anchor="middle">Scoreboard</text>
+  
+  <rect x="600" y="620" width="140" height="70" rx="15" ry="15" fill="#e1d5e7" stroke="#9673a6" stroke-width="2"/>
+  <text x="670" y="665" font-family="Arial" font-size="16" text-anchor="middle">Coverage Collector</text>
+  
+  <!-- Connecting arrows with proper spacing - all horizontal and vertical with minimal crossings -->
+  
+  <!-- Test Generator to AI-Assisted Test Optimizer (straight horizontal) -->
+  <line x1="410" y1="155" x2="595" y2="155" stroke="#000" stroke-width="2" stroke-dasharray="6,3"/>
+  <polygon points="595,155 585,150 585,160" fill="#000"/>
+  <text x="500" y="140" font-family="Arial" font-size="14" text-anchor="middle">Test Generation Guidance</text>
+  
+  <!-- Test Generator to DUT (straight vertical then horizontal) -->
+  <line x1="330" y1="190" x2="330" y2="240" stroke="#000" stroke-width="2"/>
+  <line x1="330" y1="240" x2="280" y2="240" stroke="#000" stroke-width="2"/>
+  <line x1="280" y1="240" x2="280" y2="280" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="305" y="230" font-family="Arial" font-size="14" text-anchor="middle">Test Stimuli</text>
+  
+  <!-- Test Generator to Reference Model (straight vertical then horizontal) -->
+  <line x1="330" y1="190" x2="330" y2="240" stroke="#000" stroke-width="2"/>
+  <line x1="330" y1="240" x2="730" y2="240" stroke="#000" stroke-width="2"/>
+  <line x1="730" y1="240" x2="730" y2="280" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="730" y="230" font-family="Arial" font-size="14" text-anchor="middle">Test Stimuli</text>
+  
+  <!-- DUT to Monitor (straight vertical) -->
+  <line x1="220" y1="530" x2="220" y2="620" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="180" y="575" font-family="Arial" font-size="14" text-anchor="middle">Transactions</text>
+  
+  <!-- Reference Model to Scoreboard (diagonal) -->
+  <line x1="730" y1="540" x2="730" y2="580" stroke="#000" stroke-width="2"/>
+  <line x1="730" y1="580" x2="445" y2="580" stroke="#000" stroke-width="2"/>
+  <line x1="445" y1="580" x2="445" y2="620" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="560" y="570" font-family="Arial" font-size="14" text-anchor="middle">Expected Results</text>
+  
+  <!-- Monitor to Scoreboard (straight horizontal) -->
+  <line x1="290" y1="655" x2="375" y2="655" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <text x="330" y="640" font-family="Arial" font-size="14" text-anchor="middle">Actual Results</text>
+  
+  <!-- Scoreboard to Coverage Collector (straight horizontal) -->
+  <line x1="515" y1="655" x2="600" y2="655" stroke="#000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  
+  <!-- Coverage Collector to AI-Assisted Test Optimizer (clear feedback loop) -->
+  <line x1="670" y1="620" x2="670" y2="600" stroke="#000" stroke-width="2" stroke-dasharray="6,3"/>
+  <line x1="670" y1="600" x2="800" y2="600" stroke="#000" stroke-width="2" stroke-dasharray="6,3"/>
+  <line x1="800" y1="600" x2="800" y2="170" stroke="#000" stroke-width="2" stroke-dasharray="6,3"/>
+  <line x1="800" y1="170" x2="820" y2="170" stroke="#000" stroke-width="2" stroke-dasharray="6,3" marker-end="url(#arrowhead)"/>
+  <text x="845" y="400" font-family="Arial" font-size="14" text-anchor="middle" font-style="italic" transform="rotate(90,845,400)">Coverage Feedback Loop</text>
+  <text x="735" y="590" font-family="Arial" font-size="14" text-anchor="middle">Test Effectiveness</text>
+  
+  <!-- Define the arrowhead marker -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#000"/>
+    </marker>
+  </defs>
+</svg>
